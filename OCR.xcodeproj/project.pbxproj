@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04DCE3784B43CD18B74D1119 /* libPods-OCR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2AEBCC0E994E6CF4EEE845 /* libPods-OCR.a */; };
+		0DCCA3D02325F02E005B895D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA3CF2325F02E005B895D /* AppDelegate.m */; };
+		0DCCA3D32325F02E005B895D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA3D22325F02E005B895D /* ViewController.m */; };
+		0DCCA3D62325F02E005B895D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA3D42325F02E005B895D /* Main.storyboard */; };
+		0DCCA3D82325F02F005B895D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA3D72325F02F005B895D /* Assets.xcassets */; };
+		0DCCA3DB2325F02F005B895D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA3D92325F02F005B895D /* LaunchScreen.storyboard */; };
+		0DCCA3DE2325F02F005B895D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA3DD2325F02F005B895D /* main.m */; };
+		0DCCA4592325F1A2005B895D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCCA4582325F1A2005B895D /* Accelerate.framework */; };
+		0DCCA45B2325F1AB005B895D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCCA45A2325F1AB005B895D /* libiconv.tbd */; };
+		0DCCA45D2325F29C005B895D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCCA45C2325F29C005B895D /* CoreMedia.framework */; };
+		0DCCA45F2325F2AB005B895D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCCA45E2325F2AB005B895D /* AVFoundation.framework */; };
+		0DCCA4982325F416005B895D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCCA4972325F416005B895D /* VideoToolbox.framework */; };
+		0DCCA4EA2325F4B0005B895D /* LFLivefaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA49C2325F4B0005B895D /* LFLivefaceViewController.m */; };
+		0DCCA4EB2325F4B0005B895D /* libLFLivenessDetector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCCA4A12325F4B0005B895D /* libLFLivenessDetector.a */; };
+		0DCCA4EC2325F4B0005B895D /* YFGIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4A22325F4B0005B895D /* YFGIFImageView.m */; };
+		0DCCA4ED2325F4B0005B895D /* NSObject+LFAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4A32325F4B0005B895D /* NSObject+LFAccess.m */; };
+		0DCCA4EE2325F4B0005B895D /* LFCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4A42325F4B0005B895D /* LFCircleView.m */; };
+		0DCCA4EF2325F4B0005B895D /* VERSION in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA4A72325F4B0005B895D /* VERSION */; };
+		0DCCA4F02325F4B0005B895D /* LFMultipleLivenessController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4A82325F4B0005B895D /* LFMultipleLivenessController.m */; };
+		0DCCA4F12325F4B0005B895D /* lf_liveness_resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA4AB2325F4B0005B895D /* lf_liveness_resource.bundle */; };
+		0DCCA4F22325F4B0005B895D /* LinkfaceID.lic in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA4AD2325F4B0005B895D /* LinkfaceID.lic */; };
+		0DCCA4F32325F4B0005B895D /* UIDevice+MDFHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4AE2325F4B0005B895D /* UIDevice+MDFHardware.m */; };
+		0DCCA4F42325F4B0005B895D /* LFUpDateLicenseManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4B22325F4B0005B895D /* LFUpDateLicenseManger.m */; };
+		0DCCA4F52325F4B0005B895D /* LFLicenseCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4B42325F4B0005B895D /* LFLicenseCache.m */; };
+		0DCCA4F62325F4B0005B895D /* LFLoadLicense.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4B92325F4B0005B895D /* LFLoadLicense.m */; };
+		0DCCA4F72325F4B0005B895D /* LFEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4BA2325F4B0005B895D /* LFEncryption.m */; };
+		0DCCA4F82325F4B0005B895D /* IImageAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA4BB2325F4B0005B895D /* IImageAssets.bundle */; };
+		0DCCA4F92325F4B0005B895D /* LFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4BD2325F4B0005B895D /* LFAlertView.m */; };
+		0DCCA4FA2325F4B0005B895D /* ImageAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA4BF2325F4B0005B895D /* ImageAssets.bundle */; };
+		0DCCA4FB2325F4B0005B895D /* LFBankCardReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4C52325F4B0005B895D /* LFBankCardReader.m */; };
+		0DCCA4FC2325F4B0005B895D /* LFBankCardScannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4C62325F4B0005B895D /* LFBankCardScannerController.m */; };
+		0DCCA4FD2325F4B0005B895D /* LFBankCardPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4C72325F4B0005B895D /* LFBankCardPhotoViewController.m */; };
+		0DCCA4FE2325F4B0005B895D /* LFBankCardMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4C82325F4B0005B895D /* LFBankCardMaskView.m */; };
+		0DCCA4FF2325F4B0005B895D /* LFIDCardScannerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4CA2325F4B0005B895D /* LFIDCardScannerController.m */; };
+		0DCCA5002325F4B0005B895D /* LFIDCardPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4CB2325F4B0005B895D /* LFIDCardPhotoViewController.m */; };
+		0DCCA5012325F4B0005B895D /* LFIDCardReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4D02325F4B0005B895D /* LFIDCardReader.m */; };
+		0DCCA5022325F4B0005B895D /* LFIDCardMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4D12325F4B0005B895D /* LFIDCardMaskView.m */; };
+		0DCCA5032325F4B0005B895D /* LFImageClipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4D32325F4B0005B895D /* LFImageClipViewController.m */; };
+		0DCCA5042325F4B0005B895D /* MSWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4DA2325F4B0005B895D /* MSWeakTimer.m */; };
+		0DCCA5052325F4B0005B895D /* LFCaptureReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4DC2325F4B0005B895D /* LFCaptureReader.m */; };
+		0DCCA5062325F4B0005B895D /* LFCaptureMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4DF2325F4B0005B895D /* LFCaptureMaskView.m */; };
+		0DCCA5072325F4B0005B895D /* LFCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4E02325F4B0005B895D /* LFCapture.m */; };
+		0DCCA5082325F4B0005B895D /* LFCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4E32325F4B0005B895D /* LFCaptureController.m */; };
+		0DCCA5092325F4B0005B895D /* LFCapturePhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCCA4E42325F4B0005B895D /* LFCapturePhotoViewController.m */; };
+		0DCCA50A2325F4B0005B895D /* ocr_card.model in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA4E62325F4B0005B895D /* ocr_card.model */; };
+		0DCCA50B2325F4B0005B895D /* OCR_SDK_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DCCA4E72325F4B0005B895D /* OCR_SDK_Resource.bundle */; };
+		0DCCA50C2325F4B0005B895D /* OCR_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DCCA4E92325F4B0005B895D /* OCR_SDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DCCA3CB2325F02E005B895D /* OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DCCA3CE2325F02E005B895D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0DCCA3CF2325F02E005B895D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0DCCA3D12325F02E005B895D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0DCCA3D22325F02E005B895D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0DCCA3D52325F02E005B895D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0DCCA3D72325F02F005B895D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0DCCA3DA2325F02F005B895D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0DCCA3DC2325F02F005B895D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DCCA3DD2325F02F005B895D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0DCCA4582325F1A2005B895D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		0DCCA45A2325F1AB005B895D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0DCCA45C2325F29C005B895D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0DCCA45E2325F2AB005B895D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0DCCA4972325F416005B895D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		0DCCA49C2325F4B0005B895D /* LFLivefaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivefaceViewController.m; sourceTree = "<group>"; };
+		0DCCA49D2325F4B0005B895D /* LFLivenessCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivenessCommon.h; sourceTree = "<group>"; };
+		0DCCA49E2325F4B0005B895D /* LFLivenessDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivenessDetector.h; sourceTree = "<group>"; };
+		0DCCA49F2325F4B0005B895D /* LFLivenessEnumType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivenessEnumType.h; sourceTree = "<group>"; };
+		0DCCA4A02325F4B0005B895D /* LFMultipleLivenessController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFMultipleLivenessController.h; sourceTree = "<group>"; };
+		0DCCA4A12325F4B0005B895D /* libLFLivenessDetector.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLFLivenessDetector.a; sourceTree = "<group>"; };
+		0DCCA4A22325F4B0005B895D /* YFGIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFGIFImageView.m; sourceTree = "<group>"; };
+		0DCCA4A32325F4B0005B895D /* NSObject+LFAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LFAccess.m"; sourceTree = "<group>"; };
+		0DCCA4A42325F4B0005B895D /* LFCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCircleView.m; sourceTree = "<group>"; };
+		0DCCA4A52325F4B0005B895D /* UIDevice+MDFHardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+MDFHardware.h"; sourceTree = "<group>"; };
+		0DCCA4A62325F4B0005B895D /* LFLivefaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivefaceViewController.h; sourceTree = "<group>"; };
+		0DCCA4A72325F4B0005B895D /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
+		0DCCA4A82325F4B0005B895D /* LFMultipleLivenessController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFMultipleLivenessController.m; sourceTree = "<group>"; };
+		0DCCA4A92325F4B0005B895D /* NSObject+LFAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LFAccess.h"; sourceTree = "<group>"; };
+		0DCCA4AA2325F4B0005B895D /* YFGIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFGIFImageView.h; sourceTree = "<group>"; };
+		0DCCA4AB2325F4B0005B895D /* lf_liveness_resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lf_liveness_resource.bundle; sourceTree = "<group>"; };
+		0DCCA4AC2325F4B0005B895D /* LFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFImage.h; sourceTree = "<group>"; };
+		0DCCA4AD2325F4B0005B895D /* LinkfaceID.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LinkfaceID.lic; sourceTree = "<group>"; };
+		0DCCA4AE2325F4B0005B895D /* UIDevice+MDFHardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+MDFHardware.m"; sourceTree = "<group>"; };
+		0DCCA4AF2325F4B0005B895D /* LFLivenessDetectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivenessDetectorDelegate.h; sourceTree = "<group>"; };
+		0DCCA4B02325F4B0005B895D /* LFCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCircleView.h; sourceTree = "<group>"; };
+		0DCCA4B22325F4B0005B895D /* LFUpDateLicenseManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFUpDateLicenseManger.m; sourceTree = "<group>"; };
+		0DCCA4B42325F4B0005B895D /* LFLicenseCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLicenseCache.m; sourceTree = "<group>"; };
+		0DCCA4B52325F4B0005B895D /* LFLicenseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLicenseCache.h; sourceTree = "<group>"; };
+		0DCCA4B72325F4B0005B895D /* LFEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFEncryption.h; sourceTree = "<group>"; };
+		0DCCA4B82325F4B0005B895D /* LFLoadLicense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLoadLicense.h; sourceTree = "<group>"; };
+		0DCCA4B92325F4B0005B895D /* LFLoadLicense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLoadLicense.m; sourceTree = "<group>"; };
+		0DCCA4BA2325F4B0005B895D /* LFEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFEncryption.m; sourceTree = "<group>"; };
+		0DCCA4BB2325F4B0005B895D /* IImageAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IImageAssets.bundle; sourceTree = "<group>"; };
+		0DCCA4BC2325F4B0005B895D /* LFUpDateLicenseManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFUpDateLicenseManger.h; sourceTree = "<group>"; };
+		0DCCA4BD2325F4B0005B895D /* LFAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFAlertView.m; sourceTree = "<group>"; };
+		0DCCA4BF2325F4B0005B895D /* ImageAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ImageAssets.bundle; sourceTree = "<group>"; };
+		0DCCA4C12325F4B0005B895D /* LFBankCardScannerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBankCardScannerController.h; sourceTree = "<group>"; };
+		0DCCA4C22325F4B0005B895D /* LFBankCardReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBankCardReader.h; sourceTree = "<group>"; };
+		0DCCA4C32325F4B0005B895D /* LFBankCardPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBankCardPhotoViewController.h; sourceTree = "<group>"; };
+		0DCCA4C42325F4B0005B895D /* LFBankCardMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBankCardMaskView.h; sourceTree = "<group>"; };
+		0DCCA4C52325F4B0005B895D /* LFBankCardReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBankCardReader.m; sourceTree = "<group>"; };
+		0DCCA4C62325F4B0005B895D /* LFBankCardScannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBankCardScannerController.m; sourceTree = "<group>"; };
+		0DCCA4C72325F4B0005B895D /* LFBankCardPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBankCardPhotoViewController.m; sourceTree = "<group>"; };
+		0DCCA4C82325F4B0005B895D /* LFBankCardMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBankCardMaskView.m; sourceTree = "<group>"; };
+		0DCCA4CA2325F4B0005B895D /* LFIDCardScannerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFIDCardScannerController.m; sourceTree = "<group>"; };
+		0DCCA4CB2325F4B0005B895D /* LFIDCardPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFIDCardPhotoViewController.m; sourceTree = "<group>"; };
+		0DCCA4CC2325F4B0005B895D /* LFIDCardReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFIDCardReader.h; sourceTree = "<group>"; };
+		0DCCA4CD2325F4B0005B895D /* LFIDCardMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFIDCardMaskView.h; sourceTree = "<group>"; };
+		0DCCA4CE2325F4B0005B895D /* LFIDCardPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFIDCardPhotoViewController.h; sourceTree = "<group>"; };
+		0DCCA4CF2325F4B0005B895D /* LFIDCardScannerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFIDCardScannerController.h; sourceTree = "<group>"; };
+		0DCCA4D02325F4B0005B895D /* LFIDCardReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFIDCardReader.m; sourceTree = "<group>"; };
+		0DCCA4D12325F4B0005B895D /* LFIDCardMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFIDCardMaskView.m; sourceTree = "<group>"; };
+		0DCCA4D32325F4B0005B895D /* LFImageClipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFImageClipViewController.m; sourceTree = "<group>"; };
+		0DCCA4D42325F4B0005B895D /* LFCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCapture.h; sourceTree = "<group>"; };
+		0DCCA4D52325F4B0005B895D /* LFCaptureMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCaptureMaskView.h; sourceTree = "<group>"; };
+		0DCCA4D62325F4B0005B895D /* LFCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCommon.h; sourceTree = "<group>"; };
+		0DCCA4D72325F4B0005B895D /* LFCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCaptureController.h; sourceTree = "<group>"; };
+		0DCCA4D92325F4B0005B895D /* MSWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSWeakTimer.h; sourceTree = "<group>"; };
+		0DCCA4DA2325F4B0005B895D /* MSWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSWeakTimer.m; sourceTree = "<group>"; };
+		0DCCA4DB2325F4B0005B895D /* LFCaptureReaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCaptureReaderDelegate.h; sourceTree = "<group>"; };
+		0DCCA4DC2325F4B0005B895D /* LFCaptureReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCaptureReader.m; sourceTree = "<group>"; };
+		0DCCA4DD2325F4B0005B895D /* LFCapturePhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCapturePhotoViewController.h; sourceTree = "<group>"; };
+		0DCCA4DE2325F4B0005B895D /* LFCaptureDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCaptureDelegate.h; sourceTree = "<group>"; };
+		0DCCA4DF2325F4B0005B895D /* LFCaptureMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCaptureMaskView.m; sourceTree = "<group>"; };
+		0DCCA4E02325F4B0005B895D /* LFCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCapture.m; sourceTree = "<group>"; };
+		0DCCA4E12325F4B0005B895D /* LFImageClipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFImageClipViewController.h; sourceTree = "<group>"; };
+		0DCCA4E22325F4B0005B895D /* LFCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFCaptureReader.h; sourceTree = "<group>"; };
+		0DCCA4E32325F4B0005B895D /* LFCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCaptureController.m; sourceTree = "<group>"; };
+		0DCCA4E42325F4B0005B895D /* LFCapturePhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCapturePhotoViewController.m; sourceTree = "<group>"; };
+		0DCCA4E62325F4B0005B895D /* ocr_card.model */ = {isa = PBXFileReference; lastKnownFileType = file; path = ocr_card.model; sourceTree = "<group>"; };
+		0DCCA4E72325F4B0005B895D /* OCR_SDK_Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OCR_SDK_Resource.bundle; sourceTree = "<group>"; };
+		0DCCA4E82325F4B0005B895D /* LFAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFAlertView.h; sourceTree = "<group>"; };
+		0DCCA4E92325F4B0005B895D /* OCR_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OCR_SDK.framework; sourceTree = "<group>"; };
+		6E2AEBCC0E994E6CF4EEE845 /* libPods-OCR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OCR.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7AD165E58FDE662D4EC94E /* Pods-OCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR.release.xcconfig"; path = "Target Support Files/Pods-OCR/Pods-OCR.release.xcconfig"; sourceTree = "<group>"; };
+		DD9D30266D181F60A44CAAC6 /* Pods-OCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR.debug.xcconfig"; path = "Target Support Files/Pods-OCR/Pods-OCR.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DCCA3C82325F02E005B895D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCCA4982325F416005B895D /* VideoToolbox.framework in Frameworks */,
+				0DCCA45F2325F2AB005B895D /* AVFoundation.framework in Frameworks */,
+				0DCCA50C2325F4B0005B895D /* OCR_SDK.framework in Frameworks */,
+				0DCCA45D2325F29C005B895D /* CoreMedia.framework in Frameworks */,
+				0DCCA45B2325F1AB005B895D /* libiconv.tbd in Frameworks */,
+				0DCCA4EB2325F4B0005B895D /* libLFLivenessDetector.a in Frameworks */,
+				0DCCA4592325F1A2005B895D /* Accelerate.framework in Frameworks */,
+				04DCE3784B43CD18B74D1119 /* libPods-OCR.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DCCA3C22325F02E005B895D = {
+			isa = PBXGroup;
+			children = (
+				0DCCA3CD2325F02E005B895D /* OCR */,
+				0DCCA3CC2325F02E005B895D /* Products */,
+				3EB595180613DAB84AD6AD95 /* Pods */,
+				1D56B74EB4652F7EE6B5D611 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0DCCA3CC2325F02E005B895D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA3CB2325F02E005B895D /* OCR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DCCA3CD2325F02E005B895D /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4992325F4B0005B895D /* OCRSource */,
+				0DCCA3CE2325F02E005B895D /* AppDelegate.h */,
+				0DCCA3CF2325F02E005B895D /* AppDelegate.m */,
+				0DCCA3D12325F02E005B895D /* ViewController.h */,
+				0DCCA3D22325F02E005B895D /* ViewController.m */,
+				0DCCA3D42325F02E005B895D /* Main.storyboard */,
+				0DCCA3D72325F02F005B895D /* Assets.xcassets */,
+				0DCCA3D92325F02F005B895D /* LaunchScreen.storyboard */,
+				0DCCA3DC2325F02F005B895D /* Info.plist */,
+				0DCCA3DD2325F02F005B895D /* main.m */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		0DCCA4992325F4B0005B895D /* OCRSource */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA49A2325F4B0005B895D /* PeopleLive */,
+				0DCCA4BD2325F4B0005B895D /* LFAlertView.m */,
+				0DCCA4BE2325F4B0005B895D /* include */,
+				0DCCA4E52325F4B0005B895D /* model */,
+				0DCCA4E82325F4B0005B895D /* LFAlertView.h */,
+				0DCCA4E92325F4B0005B895D /* OCR_SDK.framework */,
+			);
+			path = OCRSource;
+			sourceTree = SOURCE_ROOT;
+		};
+		0DCCA49A2325F4B0005B895D /* PeopleLive */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA49B2325F4B0005B895D /* libLFMultipleLiveness */,
+				0DCCA4B12325F4B0005B895D /* UpLicense */,
+			);
+			path = PeopleLive;
+			sourceTree = "<group>";
+		};
+		0DCCA49B2325F4B0005B895D /* libLFMultipleLiveness */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA49C2325F4B0005B895D /* LFLivefaceViewController.m */,
+				0DCCA49D2325F4B0005B895D /* LFLivenessCommon.h */,
+				0DCCA49E2325F4B0005B895D /* LFLivenessDetector.h */,
+				0DCCA49F2325F4B0005B895D /* LFLivenessEnumType.h */,
+				0DCCA4A02325F4B0005B895D /* LFMultipleLivenessController.h */,
+				0DCCA4A12325F4B0005B895D /* libLFLivenessDetector.a */,
+				0DCCA4A22325F4B0005B895D /* YFGIFImageView.m */,
+				0DCCA4A32325F4B0005B895D /* NSObject+LFAccess.m */,
+				0DCCA4A42325F4B0005B895D /* LFCircleView.m */,
+				0DCCA4A52325F4B0005B895D /* UIDevice+MDFHardware.h */,
+				0DCCA4A62325F4B0005B895D /* LFLivefaceViewController.h */,
+				0DCCA4A72325F4B0005B895D /* VERSION */,
+				0DCCA4A82325F4B0005B895D /* LFMultipleLivenessController.m */,
+				0DCCA4A92325F4B0005B895D /* NSObject+LFAccess.h */,
+				0DCCA4AA2325F4B0005B895D /* YFGIFImageView.h */,
+				0DCCA4AB2325F4B0005B895D /* lf_liveness_resource.bundle */,
+				0DCCA4AC2325F4B0005B895D /* LFImage.h */,
+				0DCCA4AD2325F4B0005B895D /* LinkfaceID.lic */,
+				0DCCA4AE2325F4B0005B895D /* UIDevice+MDFHardware.m */,
+				0DCCA4AF2325F4B0005B895D /* LFLivenessDetectorDelegate.h */,
+				0DCCA4B02325F4B0005B895D /* LFCircleView.h */,
+			);
+			path = libLFMultipleLiveness;
+			sourceTree = "<group>";
+		};
+		0DCCA4B12325F4B0005B895D /* UpLicense */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4B22325F4B0005B895D /* LFUpDateLicenseManger.m */,
+				0DCCA4B32325F4B0005B895D /* Cache */,
+				0DCCA4B62325F4B0005B895D /* LoadLicense */,
+				0DCCA4BB2325F4B0005B895D /* IImageAssets.bundle */,
+				0DCCA4BC2325F4B0005B895D /* LFUpDateLicenseManger.h */,
+			);
+			path = UpLicense;
+			sourceTree = "<group>";
+		};
+		0DCCA4B32325F4B0005B895D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4B42325F4B0005B895D /* LFLicenseCache.m */,
+				0DCCA4B52325F4B0005B895D /* LFLicenseCache.h */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		0DCCA4B62325F4B0005B895D /* LoadLicense */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4B72325F4B0005B895D /* LFEncryption.h */,
+				0DCCA4B82325F4B0005B895D /* LFLoadLicense.h */,
+				0DCCA4B92325F4B0005B895D /* LFLoadLicense.m */,
+				0DCCA4BA2325F4B0005B895D /* LFEncryption.m */,
+			);
+			path = LoadLicense;
+			sourceTree = "<group>";
+		};
+		0DCCA4BE2325F4B0005B895D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4BF2325F4B0005B895D /* ImageAssets.bundle */,
+				0DCCA4C02325F4B0005B895D /* BankCard */,
+				0DCCA4C92325F4B0005B895D /* IDCard */,
+				0DCCA4D22325F4B0005B895D /* Base */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0DCCA4C02325F4B0005B895D /* BankCard */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4C12325F4B0005B895D /* LFBankCardScannerController.h */,
+				0DCCA4C22325F4B0005B895D /* LFBankCardReader.h */,
+				0DCCA4C32325F4B0005B895D /* LFBankCardPhotoViewController.h */,
+				0DCCA4C42325F4B0005B895D /* LFBankCardMaskView.h */,
+				0DCCA4C52325F4B0005B895D /* LFBankCardReader.m */,
+				0DCCA4C62325F4B0005B895D /* LFBankCardScannerController.m */,
+				0DCCA4C72325F4B0005B895D /* LFBankCardPhotoViewController.m */,
+				0DCCA4C82325F4B0005B895D /* LFBankCardMaskView.m */,
+			);
+			path = BankCard;
+			sourceTree = "<group>";
+		};
+		0DCCA4C92325F4B0005B895D /* IDCard */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4CA2325F4B0005B895D /* LFIDCardScannerController.m */,
+				0DCCA4CB2325F4B0005B895D /* LFIDCardPhotoViewController.m */,
+				0DCCA4CC2325F4B0005B895D /* LFIDCardReader.h */,
+				0DCCA4CD2325F4B0005B895D /* LFIDCardMaskView.h */,
+				0DCCA4CE2325F4B0005B895D /* LFIDCardPhotoViewController.h */,
+				0DCCA4CF2325F4B0005B895D /* LFIDCardScannerController.h */,
+				0DCCA4D02325F4B0005B895D /* LFIDCardReader.m */,
+				0DCCA4D12325F4B0005B895D /* LFIDCardMaskView.m */,
+			);
+			path = IDCard;
+			sourceTree = "<group>";
+		};
+		0DCCA4D22325F4B0005B895D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4D32325F4B0005B895D /* LFImageClipViewController.m */,
+				0DCCA4D42325F4B0005B895D /* LFCapture.h */,
+				0DCCA4D52325F4B0005B895D /* LFCaptureMaskView.h */,
+				0DCCA4D62325F4B0005B895D /* LFCommon.h */,
+				0DCCA4D72325F4B0005B895D /* LFCaptureController.h */,
+				0DCCA4D82325F4B0005B895D /* MSWeakTimer */,
+				0DCCA4DB2325F4B0005B895D /* LFCaptureReaderDelegate.h */,
+				0DCCA4DC2325F4B0005B895D /* LFCaptureReader.m */,
+				0DCCA4DD2325F4B0005B895D /* LFCapturePhotoViewController.h */,
+				0DCCA4DE2325F4B0005B895D /* LFCaptureDelegate.h */,
+				0DCCA4DF2325F4B0005B895D /* LFCaptureMaskView.m */,
+				0DCCA4E02325F4B0005B895D /* LFCapture.m */,
+				0DCCA4E12325F4B0005B895D /* LFImageClipViewController.h */,
+				0DCCA4E22325F4B0005B895D /* LFCaptureReader.h */,
+				0DCCA4E32325F4B0005B895D /* LFCaptureController.m */,
+				0DCCA4E42325F4B0005B895D /* LFCapturePhotoViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0DCCA4D82325F4B0005B895D /* MSWeakTimer */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4D92325F4B0005B895D /* MSWeakTimer.h */,
+				0DCCA4DA2325F4B0005B895D /* MSWeakTimer.m */,
+			);
+			path = MSWeakTimer;
+			sourceTree = "<group>";
+		};
+		0DCCA4E52325F4B0005B895D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4E62325F4B0005B895D /* ocr_card.model */,
+				0DCCA4E72325F4B0005B895D /* OCR_SDK_Resource.bundle */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1D56B74EB4652F7EE6B5D611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DCCA4972325F416005B895D /* VideoToolbox.framework */,
+				0DCCA45E2325F2AB005B895D /* AVFoundation.framework */,
+				0DCCA45C2325F29C005B895D /* CoreMedia.framework */,
+				0DCCA45A2325F1AB005B895D /* libiconv.tbd */,
+				0DCCA4582325F1A2005B895D /* Accelerate.framework */,
+				6E2AEBCC0E994E6CF4EEE845 /* libPods-OCR.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EB595180613DAB84AD6AD95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD9D30266D181F60A44CAAC6 /* Pods-OCR.debug.xcconfig */,
+				AA7AD165E58FDE662D4EC94E /* Pods-OCR.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DCCA3CA2325F02E005B895D /* OCR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DCCA3E12325F02F005B895D /* Build configuration list for PBXNativeTarget "OCR" */;
+			buildPhases = (
+				E83699A498FB493D55E09ED1 /* [CP] Check Pods Manifest.lock */,
+				0DCCA3C72325F02E005B895D /* Sources */,
+				0DCCA3C82325F02E005B895D /* Frameworks */,
+				0DCCA3C92325F02E005B895D /* Resources */,
+				95CF82B766AD53136D0F6788 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCR;
+			productName = OCR;
+			productReference = 0DCCA3CB2325F02E005B895D /* OCR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DCCA3C32325F02E005B895D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = cyd;
+				TargetAttributes = {
+					0DCCA3CA2325F02E005B895D = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 0DCCA3C62325F02E005B895D /* Build configuration list for PBXProject "OCR" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0DCCA3C22325F02E005B895D;
+			productRefGroup = 0DCCA3CC2325F02E005B895D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DCCA3CA2325F02E005B895D /* OCR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0DCCA3C92325F02E005B895D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCCA4FA2325F4B0005B895D /* ImageAssets.bundle in Resources */,
+				0DCCA50B2325F4B0005B895D /* OCR_SDK_Resource.bundle in Resources */,
+				0DCCA4F12325F4B0005B895D /* lf_liveness_resource.bundle in Resources */,
+				0DCCA3DB2325F02F005B895D /* LaunchScreen.storyboard in Resources */,
+				0DCCA4F82325F4B0005B895D /* IImageAssets.bundle in Resources */,
+				0DCCA4F22325F4B0005B895D /* LinkfaceID.lic in Resources */,
+				0DCCA50A2325F4B0005B895D /* ocr_card.model in Resources */,
+				0DCCA4EF2325F4B0005B895D /* VERSION in Resources */,
+				0DCCA3D82325F02F005B895D /* Assets.xcassets in Resources */,
+				0DCCA3D62325F02E005B895D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95CF82B766AD53136D0F6788 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCR/Pods-OCR-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCR/Pods-OCR-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCR/Pods-OCR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E83699A498FB493D55E09ED1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DCCA3C72325F02E005B895D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCCA3D32325F02E005B895D /* ViewController.m in Sources */,
+				0DCCA5042325F4B0005B895D /* MSWeakTimer.m in Sources */,
+				0DCCA4EA2325F4B0005B895D /* LFLivefaceViewController.m in Sources */,
+				0DCCA5062325F4B0005B895D /* LFCaptureMaskView.m in Sources */,
+				0DCCA4FE2325F4B0005B895D /* LFBankCardMaskView.m in Sources */,
+				0DCCA3DE2325F02F005B895D /* main.m in Sources */,
+				0DCCA4EE2325F4B0005B895D /* LFCircleView.m in Sources */,
+				0DCCA4F02325F4B0005B895D /* LFMultipleLivenessController.m in Sources */,
+				0DCCA3D02325F02E005B895D /* AppDelegate.m in Sources */,
+				0DCCA4F32325F4B0005B895D /* UIDevice+MDFHardware.m in Sources */,
+				0DCCA5082325F4B0005B895D /* LFCaptureController.m in Sources */,
+				0DCCA5092325F4B0005B895D /* LFCapturePhotoViewController.m in Sources */,
+				0DCCA4F62325F4B0005B895D /* LFLoadLicense.m in Sources */,
+				0DCCA5072325F4B0005B895D /* LFCapture.m in Sources */,
+				0DCCA5052325F4B0005B895D /* LFCaptureReader.m in Sources */,
+				0DCCA4EC2325F4B0005B895D /* YFGIFImageView.m in Sources */,
+				0DCCA4F52325F4B0005B895D /* LFLicenseCache.m in Sources */,
+				0DCCA4FB2325F4B0005B895D /* LFBankCardReader.m in Sources */,
+				0DCCA4F42325F4B0005B895D /* LFUpDateLicenseManger.m in Sources */,
+				0DCCA5022325F4B0005B895D /* LFIDCardMaskView.m in Sources */,
+				0DCCA5032325F4B0005B895D /* LFImageClipViewController.m in Sources */,
+				0DCCA4ED2325F4B0005B895D /* NSObject+LFAccess.m in Sources */,
+				0DCCA4F72325F4B0005B895D /* LFEncryption.m in Sources */,
+				0DCCA4FC2325F4B0005B895D /* LFBankCardScannerController.m in Sources */,
+				0DCCA4FF2325F4B0005B895D /* LFIDCardScannerController.m in Sources */,
+				0DCCA4F92325F4B0005B895D /* LFAlertView.m in Sources */,
+				0DCCA5002325F4B0005B895D /* LFIDCardPhotoViewController.m in Sources */,
+				0DCCA4FD2325F4B0005B895D /* LFBankCardPhotoViewController.m in Sources */,
+				0DCCA5012325F4B0005B895D /* LFIDCardReader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0DCCA3D42325F02E005B895D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DCCA3D52325F02E005B895D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0DCCA3D92325F02F005B895D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0DCCA3DA2325F02F005B895D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0DCCA3DF2325F02F005B895D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0DCCA3E02325F02F005B895D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0DCCA3E22325F02F005B895D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD9D30266D181F60A44CAAC6 /* Pods-OCR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8U4NXNNCU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCR/OCRSource",
+					"$(PROJECT_DIR)/OCRSource",
+				);
+				INFOPLIST_FILE = OCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCR/OCRSource/PeopleLive/libLFMultipleLiveness",
+					"$(PROJECT_DIR)/OCRSource/PeopleLive/libLFMultipleLiveness",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyd.OCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0DCCA3E32325F02F005B895D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA7AD165E58FDE662D4EC94E /* Pods-OCR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z8U4NXNNCU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCR/OCRSource",
+					"$(PROJECT_DIR)/OCRSource",
+				);
+				INFOPLIST_FILE = OCR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCR/OCRSource/PeopleLive/libLFMultipleLiveness",
+					"$(PROJECT_DIR)/OCRSource/PeopleLive/libLFMultipleLiveness",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"SVProgressHUD\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cyd.OCR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DCCA3C62325F02E005B895D /* Build configuration list for PBXProject "OCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DCCA3DF2325F02F005B895D /* Debug */,
+				0DCCA3E02325F02F005B895D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DCCA3E12325F02F005B895D /* Build configuration list for PBXNativeTarget "OCR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DCCA3E22325F02F005B895D /* Debug */,
+				0DCCA3E32325F02F005B895D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DCCA3C32325F02E005B895D /* Project object */;
+}
