@@ -17,5 +17,6 @@ Pod::Spec.new do |s|
   s.source_files  = "OCRSource/*"
   s.requires_arc = true
  s.dependency "SVProgressHUD"
+ s.frameworks = 'VideoToolbox', 'CoreMedia','Accelerate','libiconv'
 
 end
